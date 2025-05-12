@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="background-color: #f0f0f0;">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo con esquinas redondeadas</title>
+  <style>
+    body {
+      width: 90%;
+      margin: 20px auto;
+      padding: 0;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-family: sans-serif;
+      overflow: hidden; /* para que el border-radius afecte también al header */
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 20px;
+      font-size: 1.5em;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    main {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Encabezado de Leacnamic
+  </header>
+  <main>
+    <h1>Contenido con esquinas redondeadas</h1>
+    <p>Este body tiene esquinas suaves gracias a <code>border-radius</code>, y un encabezado con fondo negro integrado.</p>
+  </main>
+</body>
+</html>
