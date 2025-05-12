@@ -62,9 +62,11 @@ nav a:hover {
     padding: 32px 5px;
     background-color: #3b3b3b93;
 }
+
+
 /* ----- HOME ----- */
 
-.home {
+.menu__seccion {
     display: flex;
     z-index: 1;
     position: relative;
@@ -73,10 +75,13 @@ nav a:hover {
     align-items: center;
     width: 100%;
     height: 100vh;
+}
+
+#inicio {
     background-image: url(../img/all-bong-L2oedF1AsH8-unsplash.jpg);
 }
 
-.home::after {
+#inicio::after {
     content: "";
     position: absolute;
     top: 0;
@@ -87,9 +92,14 @@ nav a:hover {
     z-index: -1;
 }
 
-.home h1 {
+#cajas__texto {
+    display:flexbox;
+    flex-direction: column;
+}
+
+#inicio__titulo h1 {
     font-family: 'Raleway', sans-serif;
-    font-size: 70px;
+    font-size: 3.5em;
     font-weight: 900;
     color: #3b839c;
     text-align: center;
@@ -97,33 +107,36 @@ nav a:hover {
     margin-top: 5vh;
     text-transform: uppercase;
     text-shadow: 3px 3px 5px #0000008f;
+    line-height: 0.9em;
 }
 
-.home h2 {
+#inicio h2 {
     font-family: 'Raleway', sans-serif;
     color: #fff;
     text-shadow: 3px 3px 5px #0000008f;
     margin-top: 0;
+    text-align: center;
 }
 
-.home h2 span {
+#inicio h2 span {
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     font-weight: 700;
-    color: #fff;
-    text-align: center;
-    text-shadow: 2px 2px 3px #0000008f;
     text-transform: uppercase;
-    margin-bottom: 2rem;
 }
 
-.home p {
+#inicio p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 15%;
     font-family: poppins, sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: #fff;
-    text-align: center;
+    text-align:justify;
     text-shadow: 2px 2px 3px #0000008f;
+    line-height: 1.3em;
 }
 
 .actions button {
