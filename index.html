@@ -8,61 +8,66 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <span>
-                MyLogo
-            </span>
-        </div>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#testimonios">Testimonios</a>
-            <a href="#consulta">Escribenos</a>
-        </nav>
-    </header>
+    <!-- Contenedor Principal -->
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <span>MyLogo</span>
+            </div>
+            <nav class="menu">
+                <ul class="menu__nav">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#escribenos">Escríbenos</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="menu__seccion" id="inicio">
-        <div class="cajas__texto" id="inicio__titulo">
-            <h1>Leadnamics</h1>
-        </div>
-        <div class="cajas__texto">
-            <h2>Impulsa tu proceso comercial con <span>IA generativa</span></h2>
-            <p>Leadnamics es una herramienta especializada en potenciar las relaciones comerciales y diseñada para transformar el mercado inmobiliario.</p>
-        </div>
-        <div class="actions">
-            <button id="home__btn1">
-                <a href="#nosotros">Conocenos</a>
-            </button>
-            <button id="home__btn2">
-                <a href="#contatos">Escribenos</a>
-            </button>
-        </div>
-    </div>
-
-    <div class="menu__seccion" id="nosotros">
-        <div class="cajas__texto" id="nosotros__titulo">
-            <h2>Quienes Somos</h2>
-        </div>
-        <div class="cajas__texto">
-            <p>Somos un grupo multidisciplinario, donde cada especialista aporta desde su área de experiencia —tecnología, diseño, análisis de datos, experiencia de usuario, finanzas e inmobiliaria— para construir soluciones integrales que respondan a los retos reales del mercado. Esta diversidad nos permite crear productos sólidos, funcionales y con una visión completa del sector. Con Leacnamics transformamos la manera en que se hace comercio en el sector inmobiliario. Somos una empresa de tecnología enfocada en modernizar, optimizar y dinamizar las operaciones del mercado inmobiliario, integrando herramientas digitales inteligentes con una experiencia de usuario centrada en la eficiencia y la confianza. Creemos que el sector inmobiliario necesita evolucionar al ritmo del mundo digital. Por eso, hemos desarrollado soluciones que simplifican los procesos de compraventa, arriendo y gestión inmobiliaria, reduciendo fricciones y mejorando la transparencia para todos los actores del ecosistema: compradores, arrendadores, agentes y desarrolladores. Con Leacnamics, el comercio inmobiliario se vuelve más rápido, más seguro y más inteligente. Estamos construyendo el futuro del mercado inmobiliario hoy. ¿Lo hacemos juntos?</p>
-        </div>
-        <div class="nosotros__container">
-            <div class="cajas__texto">
-                <h3>Servicio 1</h3>
-                <p>Descripción del servicio 1.</p>
+        <!-- Secciones -->
+        <div class="menu__seccion" id="inicio">
+            <div class="cajas__texto" id="inicio__titulo">
+                <h1>Leadnamics</h1>
             </div>
             <div class="cajas__texto">
-                <h3>Servicio 2</h3>
-                <p>Descripción del servicio 2.</p>
+                <h2>Impulsa tu proceso comercial con <span>IA generativa</span></h2>
+                <p>Leadnamics es una herramienta especializada en potenciar las relaciones comerciales y diseñada para transformar el mercado inmobiliario.</p>
             </div>
-            <div class="cajas__texto">
-                <h3>Servicio 3</h3>
-                <p>Descripción del servicio 3.</p>
+            <div class="actions">
+                <button id="home__btn1"><a href="#nosotros">Conócenos</a></button>
+                <button id="home__btn2"><a href="#consulta">Escríbenos</a></button>
             </div>
         </div>
 
+        <div class="menu__seccion" id="nosotros">
+            <div class="cajas__texto">
+                <h2>Quienes Somos</h2>
+                <p>Somos un grupo multidisciplinario...</p>
+            </div>
+        </div>
+
+        <!-- Resto de las secciones -->
+        <div class="menu__seccion" id="servicios">
+            <div class="cajas__texto">
+                <h2>Servicios</h2>
+                <p>Somos un grupo multidisciplinario...</p>
+            </div>
+        </div>
+
+        <div class="menu__seccion" id="testimonios">
+            <div class="cajas__texto">
+                <h2>Testimonios</h2>
+                <p>Somos un grupo multidisciplinario...</p>
+            </div>
+        </div>
+
+        <div class="menu__seccion" id="escribenos">
+            <div class="cajas__texto">
+                <h2>Escribenos</h2>
+                <p>Somos un grupo multidisciplinario...</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

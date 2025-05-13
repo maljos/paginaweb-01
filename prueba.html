@@ -1,41 +1,68 @@
 <!DOCTYPE html>
-<html style="background-color: #f0f0f0;">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ejemplo con esquinas redondeadas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    body {
-      width: 90%;
-      margin: 20px auto;
+    /* Resetear estilos por defecto */
+    * {
+      margin: 0;
       padding: 0;
-      background-color: white;
-      border-radius: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      font-family: sans-serif;
-      overflow: hidden; /* para que el border-radius afecte también al header */
+      box-sizing: border-box;
     }
 
-    header {
-      background-color: #000;
+    /* Estilos para el body */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    /* Estilos para el contenedor principal */
+    .container {
+      width: calc(100% - 4rem); /* Ajusta el ancho para tener un margen de 2rem en los laterales */
+      max-width: 800px; /* Ancho máximo del contenedor */
+      margin: 2rem; /* Margen de 2rem en los laterales y verticales */
+      padding: 20px; /* Relleno interno del contenedor */
+      background-color: #fff; /* Color de fondo del contenedor */
+      border-radius: 20px; /* Esquinas redondeadas */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de tarjeta */
+      overflow: hidden; /* Asegura que el contenido no se desborde las esquinas redondeadas */
+    }
+
+    /* Estilos para el encabezado */
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      background-color: #333;
       color: white;
-      padding: 20px;
-      font-size: 1.5em;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
+      padding: 10px;
+      z-index: 100;
     }
 
-    main {
-      padding: 20px;
+    /* Estilos para el contenido */
+    .content {
+      padding-top: 50px; /* Altura del encabezado para evitar desplazamiento */
     }
   </style>
 </head>
 <body>
-  <header>
-    Encabezado de Leacnamic
-  </header>
-  <main>
-    <h1>Contenido con esquinas redondeadas</h1>
-    <p>Este body tiene esquinas suaves gracias a <code>border-radius</code>, y un encabezado con fondo negro integrado.</p>
-  </main>
+  <div class="container">
+    <header class="sticky-header">
+      Encabezado
+    </header>
+    <div class="content">
+      <p>Contenido</p>
+      <p>Contenido</p>
+      <!-- Más contenido -->
+    </div>
+  </div>
 </body>
 </html>
